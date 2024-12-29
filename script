@@ -30,10 +30,11 @@ local Screepsted = {
 
 Screepsted["_AudPanel"].Name = "AudPanel"
 
+Screepsted["_Frame"].AnchorPoint = Vector2.new(1, 0.5)
 Screepsted["_Frame"].BackgroundColor3 = Color3.fromRGB(34.00000177323818, 40.00000141561031, 34.00000177323818)
 Screepsted["_Frame"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Screepsted["_Frame"].BorderSizePixel = 0
-Screepsted["_Frame"].Position = UDim2.new(10, 943, 0, 236)
+Screepsted["_Frame"].Position = UDim2.new(10, -16, 0.5, 0)
 Screepsted["_Frame"].Size = UDim2.new(0, 100, 0, 100)
 Screepsted["_Frame"].Parent = Screepsted["_AudPanel"]
 
@@ -138,7 +139,7 @@ Screepsted["_intro"].BackgroundTransparency = 0.25
 Screepsted["_intro"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Screepsted["_intro"].BorderSizePixel = 0
 Screepsted["_intro"].ClipsDescendants = true
-Screepsted["_intro"].Position = UDim2.new(0.5, 0, 0.5, -200)
+Screepsted["_intro"].Position = UDim2.new(0.5, 0, 0.5, 0)
 Screepsted["_intro"].Size = UDim2.new(0, 200, 0, 50)
 Screepsted["_intro"].Visible = false
 Screepsted["_intro"].Name = "intro"
@@ -163,7 +164,7 @@ Screepsted["_AudPanel"].Parent = game.CoreGui
 
 local fake_module_scripts = {}
 
-local function AAPPESY_fake_script() -- Fake Script: Workspace.AudPanel.Frame.Unmute.LocalScript
+local function HJYD_fake_script() -- Fake Script: Workspace.AudPanel.Frame.Unmute.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Screepsted["_Unmute"]
@@ -197,7 +198,7 @@ local function AAPPESY_fake_script() -- Fake Script: Workspace.AudPanel.Frame.Un
 		until script.Parent.Parent.teller.TextColor3 == Color3.new(0, 1, 0)
 	end)
 end
-local function VOMOQDX_fake_script() -- Fake Script: Workspace.AudPanel.Frame.Mute.LocalScript
+local function HMQKAG_fake_script() -- Fake Script: Workspace.AudPanel.Frame.Mute.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Screepsted["_Mute"]
@@ -236,7 +237,7 @@ local function VOMOQDX_fake_script() -- Fake Script: Workspace.AudPanel.Frame.Mu
 		until script.Parent.Parent.teller.TextColor3 == Color3.new(1, 0, 0)
 	end)
 end
-local function QNEWKY_fake_script() -- Fake Script: Workspace.AudPanel.Frame.Close.LocalScript
+local function WQXZER_fake_script() -- Fake Script: Workspace.AudPanel.Frame.Close.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Screepsted["_Close"]
@@ -251,7 +252,7 @@ local function QNEWKY_fake_script() -- Fake Script: Workspace.AudPanel.Frame.Clo
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent:TweenPosition(
-			UDim2.new(10, 943, 0, 236),
+			UDim2.new(10, -16, 0.5, 0),
 			Enum.EasingDirection.InOut,
 			Enum.EasingStyle.Sine,
 			5
@@ -260,7 +261,7 @@ local function QNEWKY_fake_script() -- Fake Script: Workspace.AudPanel.Frame.Clo
 		script.Parent.Parent.Parent:Destroy()
 	end)
 end
-local function QEBLD_fake_script() -- Fake Script: Workspace.AudPanel.Frame.OnExecute
+local function RMJQPTI_fake_script() -- Fake Script: Workspace.AudPanel.Frame.OnExecute
     local script = Instance.new("LocalScript")
     script.Name = "OnExecute"
     script.Parent = Screepsted["_Frame"]
@@ -284,13 +285,13 @@ local function QEBLD_fake_script() -- Fake Script: Workspace.AudPanel.Frame.OnEx
 	})
 	
 	script.Parent:TweenPosition(
-		UDim2.new(0, 943, 0, 236),
+		UDim2.new(1, 0, 0.5, 0),
 		Enum.EasingDirection.InOut,
 		Enum.EasingStyle.Sine,
 		5
 	)
 end
-local function FHJDTK_fake_script() -- Fake Script: Workspace.AudPanel.intro.LocalScript
+local function LPFAA_fake_script() -- Fake Script: Workspace.AudPanel.intro.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Screepsted["_intro"]
@@ -314,7 +315,7 @@ local function FHJDTK_fake_script() -- Fake Script: Workspace.AudPanel.intro.Loc
 	wait(1)
 	script.Parent:Destroy()
 end
-local function GKKVD_fake_script() -- Fake Script: Workspace.AudPanel.SoundSystem
+local function SKTTZ_fake_script() -- Fake Script: Workspace.AudPanel.SoundSystem
     local script = Instance.new("LocalScript")
     script.Name = "SoundSystem"
     script.Parent = Screepsted["_AudPanel"]
@@ -348,9 +349,9 @@ local function GKKVD_fake_script() -- Fake Script: Workspace.AudPanel.SoundSyste
 	end
 end
 
-coroutine.wrap(AAPPESY_fake_script)()
-coroutine.wrap(VOMOQDX_fake_script)()
-coroutine.wrap(QNEWKY_fake_script)()
-coroutine.wrap(QEBLD_fake_script)()
-coroutine.wrap(FHJDTK_fake_script)()
-coroutine.wrap(GKKVD_fake_script)()
+coroutine.wrap(HJYD_fake_script)()
+coroutine.wrap(HMQKAG_fake_script)()
+coroutine.wrap(WQXZER_fake_script)()
+coroutine.wrap(RMJQPTI_fake_script)()
+coroutine.wrap(LPFAA_fake_script)()
+coroutine.wrap(SKTTZ_fake_script)()
