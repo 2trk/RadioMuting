@@ -183,7 +183,7 @@ local function HJYD_fake_script() -- Fake Script: Workspace.AudPanel.Frame.Unmut
 		
 		repeat
 			local players = game.Players:GetPlayers()
-			if players ~= game.Players.LocalPlayer then
+			if players ~= nil then
 				for i,v in pairs(players) do
 					task.spawn(function()
 						for i, x in next, v.Character:GetDescendants() do
@@ -217,7 +217,7 @@ local function HMQKAG_fake_script() -- Fake Script: Workspace.AudPanel.Frame.Mut
 		
 		repeat
 			local players = game.Players:GetPlayers()
-			if players ~= game.Players.LocalPlayer then
+			if players ~= nil then
 				for i,v in pairs(players) do
 					task.spawn(function()
 						for i, x in next, v.Character:GetDescendants() do
@@ -285,7 +285,7 @@ local function RMJQPTI_fake_script() -- Fake Script: Workspace.AudPanel.Frame.On
 	})
 	
 	script.Parent:TweenPosition(
-		UDim2.new(1, 0, 0.5, 0),
+		UDim2.new(1, -16, 0.5, 0),
 		Enum.EasingDirection.InOut,
 		Enum.EasingStyle.Sine,
 		5
